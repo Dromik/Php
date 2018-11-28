@@ -11,7 +11,7 @@ function Palindrome($string){
 }   
   
 // Driver Code 
-$original = "DAD";  
+$original = "Rotator";  
 if(Palindrome($original)){   
     echo "Palindrome";   
 }  
