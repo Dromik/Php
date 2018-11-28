@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello World!");
+            var name= "marius";
+            Console.WriteLine($"Hello {name.ToUpper()}!");
+            var names = new List<string>{ "Marius","Felipe","Emillia"};
+            foreach(var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+        }
+    }
+}
