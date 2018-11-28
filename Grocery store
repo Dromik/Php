@@ -1,15 +1,47 @@
-<html>
-<head>
-    <title>Infomation</title>
-</head>
-<body>
-<?php
-echo"Data display ";
 
+
+<?php
+$ClientName="Adam";
+$ClientAdress="6 Chiltern Crescent";
+$ClientAge="21";
+//Client Discount
+$numberOfApples=20;
+$numberOfBananas=40;
+$bananaPrice=$numberOfBananas*0.6 ;
+$applePrice=$numberOfApples*0.8 ;
+$totalPrice=$bananaPrice+$applePrice;
+if (($numberOfApples>15)&& ($numberOfBananas>30)){
+    echo'25% Discount = '. $totalPrice =$totalPrice*0.75;  
+}
+elseif(($numberOfApples>10)|| ($numberOfBananas>20)){
+    echo'15% Discount = '. $totalPrice =$totalPrice*0.85;
+}
+echo PHP_EOL ;
+//Client name
+switch($ClientName){
+ case"Adam";
+ echo "Hello Adam";
+ break;
+ case"Alex";
+ echo"Hello Alex";
+ break;
+ case"Arnold"
+ echo"Hello Arnold"
+ break;
+ default:
+    echo"Hello Dear Costumer";
+    break;
+    }
+echo PHP_EOL ;
+//Client age
+
+    echo "Clients like Alex,  with forward ages cannot buy Alcohol: ";
+    for ($ClientAge=15; $ClientAge<=18; $ClientAge++){
+    echo $ClientAge;
+    if($ClientAge!=18){
+        echo ',';
 ?>
 
 
 
-</body>
 
-</html>
